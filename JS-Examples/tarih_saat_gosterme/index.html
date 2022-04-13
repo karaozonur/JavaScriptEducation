@@ -1,0 +1,27 @@
+<!-- //tarih saat gösterme -->
+<!DOCTYPE HTML>
+<html lang="tr">
+    <head>
+        <title>tarih saat gösterme </title>
+        <META charset="UTF-8">  
+            <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css'>
+         
+
+    </head>
+    <body>
+       <div id="zaman"></div>
+     
+
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js'></script>
+    <script>
+           function tarihOku(){
+               var date=new Date().toLocaleString();
+               document.getElementById("zaman").innerHTML=date;
+           }
+           setInterval(tarihOku,1000);
+           //1000 = 1sn
+           //2000 = 2sn
+        //5000 =5 sn
+    </script>  
+     </body>
+</html>
