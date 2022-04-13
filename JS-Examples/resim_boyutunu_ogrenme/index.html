@@ -1,0 +1,30 @@
+<!-- //resim boyutunu öğrenme -->
+<!DOCTYPE HTML>
+<html lang="tr">
+    <head>
+        <title>resim boyutunu öğrenme </title>
+        <META charset="UTF-8">  
+            <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css'>
+         
+
+    </head>
+    <body>
+       
+        <input id="selectimg" name="Phone" type="file" >
+
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js'></script>
+    <script>
+            $(document).ready(function () {
+            $('input').change(function() {
+            var u = URL.createObjectURL(this.files[0]);
+            var img = new Image;     
+            img.onload = function() {
+                alert(img.width);
+                
+            };      
+            img.src = u;
+            });
+            });
+    </script>  
+     </body>
+</html>
