@@ -1,7 +1,6 @@
-//ADD Event Listener  CLİCK
-const reload = document.querySelector('#getProduct');
 
-reload.addEventListener('click',loadExp);
+window.addEventListener('load',loadExp);
+
 function loadExp(){
 
     var loadgif=document.querySelector('#loading');
