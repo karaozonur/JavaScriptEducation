@@ -1,0 +1,20 @@
+[
+    {
+        "productName":"Monitör",
+        "price": 150,
+        "amount":5,
+        "vat":18
+    },
+    {
+        "productName":"TV",
+        "price": 250,
+        "amount":5,
+        "vat":18
+    },
+    {
+        "productName":"NOTEBOOK",
+        "price": 2500,
+        "amount":5,
+        "vat":18
+    }
+]
