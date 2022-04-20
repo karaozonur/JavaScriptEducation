@@ -10,17 +10,7 @@
         <input id="parola" class="form-control">
         <button class="btn btn-primary" onclick="SifreOlustur()"></button>
     <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js'></script>
-    <script>
-      function SifreOlustur(){
-        var uzunluk=12,
-            karakterler="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789./_?()",
-            snDeger="";
-            for(var i=0,n=karakterler.length;i< uzunluk;++i){
-                snDeger+=karakterler.charAt(Math.floor(Math.random()*n));
-
-            }
-            $("#parola").val(snDeger);
-      }
-    </script>  
+    <script src="script.js"></script>
+  
     </body>
 </html>

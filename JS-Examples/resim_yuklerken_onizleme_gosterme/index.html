@@ -21,16 +21,7 @@
       </form>
 
     <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js'></script>
-    <script>
-        $(document).ready(function(){
+    <script src="script.js"></script>
 
-            $("#imgprev").hide();
-
-         $("#FileImage").change(function (e){
-            $("#imgprev").show();
-            $("#imgprev").attr('src',URL.createObjectURL(e.target.files[0]));
-         });
-        });
-    </script>  
      </body>
 </html>

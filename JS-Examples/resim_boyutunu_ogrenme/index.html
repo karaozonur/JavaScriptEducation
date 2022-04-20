@@ -13,18 +13,7 @@
         <input id="selectimg" name="Phone" type="file" >
 
     <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js'></script>
-    <script>
-            $(document).ready(function () {
-            $('input').change(function() {
-            var u = URL.createObjectURL(this.files[0]);
-            var img = new Image;     
-            img.onload = function() {
-                alert(img.width);
-                
-            };      
-            img.src = u;
-            });
-            });
-    </script>  
+    <script src='script.js'></script>
+ 
      </body>
 </html>
