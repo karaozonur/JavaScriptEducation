@@ -20,19 +20,18 @@
     <script>
       "use strict";
         var mesaj = document.getElementById("mesaj");
-        var karakter = document.getElementById("karakter");
-        var karakterSiniri = 140;
-        mesaj.onkeyup = karakterKontrol;
-        mesaj.onkeydown = karakterKontrol;
-        function karakterKontrol() {
-            var mesajUzunluk = this.value.length;
-            if (karakterSiniri >= mesajUzunluk) {
-                var kalan = karakterSiniri - mesajUzunluk;
-                karakter.innerHTML = kalan + " karakter kaldı";
-            } else {
-                this.value = this.value.substr(0, karakterSiniri);
-            }
+        var cdf=mesaj;
+        var liste = ["Elma", "Armut", "Portakal"];
+        var result;
+        window.addEventListener('keyup',SearchData);
+
+        function SearchData(){
+            liste.forEach(element => {
+                result = cdf.search(element);
+            });
+            document.querySelector("#karakter").innerHTML=result;
         }
+   
     </script>  
      </body>
 </html>
