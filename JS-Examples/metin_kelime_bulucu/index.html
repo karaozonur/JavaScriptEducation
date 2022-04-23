@@ -18,20 +18,24 @@
     </div>
         <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js'></script>
     <script>
-      "use strict";
+
+$(document).ready(function () {
+   
         var mesaj = document.getElementById("mesaj");
-        var cdf=mesaj;
+        let cdf=mesaj;
         var liste = ["Elma", "Armut", "Portakal"];
         var result;
-        window.addEventListener('keyup',SearchData);
+        window.addEventListener('change',SearchData());
 
         function SearchData(){
-            liste.forEach(element => {
-                result = cdf.search(element);
-            });
+             liste.forEach(element => {
+                result = cdf.includes(element);
+             });
             document.querySelector("#karakter").innerHTML=result;
         }
-   
+ 
+    });
+      
     </script>  
      </body>
 </html>
