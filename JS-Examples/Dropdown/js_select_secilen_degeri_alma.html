@@ -1,0 +1,29 @@
+<!DOCTYPE HTML>
+<html lang="tr">
+    <head>
+        <title>javascript’te select option değeri alma</title>
+        <META charset="UTF-8">  
+
+    </head>
+    <body>
+        <select name="selectadi" id="idselect" >
+            <option value="0">Değer 1</option>
+            <option value="1">Değer 2</option>
+            <option value="2">Değer 3</option>
+        </select>
+        
+        <script>
+            const selectname=document.getElementById("idselect");
+            selectname.addEventListener("change",DegerGoster);
+
+            function DegerGoster(){
+                var SKutu=document.getElementById('idselect');
+                var SKutuValue= SKutu.options[SKutu.selectedIndex].value;
+                var SKutuText= SKutu.options[SKutu.selectedIndex].text;
+                alert("Value Degeri" + SKutuValue );
+                alert("TEXT Degeri" + SKutuText );
+            }
+        </script>
+ 
+     </body>
+</html>

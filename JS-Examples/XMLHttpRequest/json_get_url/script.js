@@ -1,6 +1,6 @@
 //LOAD
 //event | function
- window.addEventListener('load',loadData);
+ window.addEventListener('load',LoadExp);
 function LoadExp(){
     var url="https://jsonplaceholder.typicode.com/posts";
     var xhr =new XMLHttpRequest();

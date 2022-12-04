@@ -1,0 +1,64 @@
+<!DOCTYPE HTML>
+<html lang="tr">
+    <head>
+        <title>Ekran Bilgilerini Göster </title>
+        <META charset="UTF-8">  
+        <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css'>
+    </head>
+    <body>
+        <!-- document.getElementById kullanımı  -->
+        <p id="birinci"> ilk paragraf</p>
+        <p name="yazar">ikinci pragraf</p>
+        <p>üçüncü paragraf</p>
+        <p>dördüncü paragraf</p>     
+        <script>
+        var getElementById= document.getElementById("birinci");
+        console.log("document.getElementById :"+ getElementById);
+        </script>
+        <!-- document.getElementsByName kullanımı -->
+        <p id="birinci"> ilk paragraf</p>
+        <p name="yazar">ikinci pragraf</p>
+        <p name="yazar">üçüncü paragraf</p>
+        <p>dördüncü paragraf</p>     
+        <script>      
+        var ByName= document.getElementsByName("yazar");
+        console.log(ByName);
+        </script>
+        <!-- document.getElementsByTagName kullanımı -->
+        <p id="birinci"> ilk paragraf</p>
+        <p name="yazar">ikinci pragraf</p>
+        <p name="yazar">üçüncü paragraf</p>
+        <p>dördüncü paragraf</p>
+        <script>
+        var ByTagName= document.getElementsByTagName("p");
+        console.log(ByTagName); 
+        </script>
+<!-- document.getElementsByClassName kullanımı -->
+<p id="birinci"> ilk paragraf</p>
+<p class="kutu">ikinci pragraf</p>
+<p class="kutu">üçüncü paragraf</p>
+<p>dördüncü paragraf</p>
+<script>
+var ClassName= document.getElementsByClassName("kutu");
+console.log(ClassName); 
+</script>
+<!-- document.querySelector kullanımı -->
+<p id="birinci"> ilk paragraf</p>
+<p class="kutu">ikinci pragraf</p>
+<p class="kutu">üçüncü paragraf</p>
+<p>dördüncü paragraf</p> 
+<script>
+var querySelector= document.querySelector(".kutu");
+console.log(querySelector); 
+</script>
+<!-- document.querySelectorAll kullanımı -->
+<p id="birinci"> ilk paragraf</p>
+<p class="kutu">ikinci pragraf</p>
+<p class="kutu">üçüncü paragraf</p>
+<p>dördüncü paragraf</p>
+<script>
+var SelectorAll= document.querySelectorAll(".kutu");
+console.log(SelectorAll); 
+</script>
+     </body>
+</html>
